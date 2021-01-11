@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./fruit.css"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+ integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" /> 
+ <title>Fruitant</title>
+</head>
+<style>
+
+
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+		background: #ff9b00;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+  }
+  span.fa.fa-viadeo {
+    font-size: 25px;
+    color: greenyellow;
+    font-weight: 600;
+    line-height: 10px;
+}
+nav.navbar.navbar-expand-lg.bg-light {
+    top: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+.pad{
+  height: 20px;
+}
+a.brand-logo {
+    color: greenyellow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 10px;
+    text-decoration: none;
+}
+a.brand-logo:hover{
+    color: greenyellow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 10px;
+    text-decoration: none;
+}
+a.brand-logo.span.fru{
+     color: greenyellow !important;
+}
+nav.navbar.navbar-expand-lg.bg-light {
+    background-color: blue !important;
+}
+a.nav-item.nav-link.active {
+    color:red !important;
+}
+a.nav-item.nav-link:hover{
+    color: crimson !important;
+
+}
+a.nav-item.nav-link {
+    color: white !important;
+}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+  }
+  img {
+    width: 65%;
+}
+body.bg{
+    background: rgb(240,105,105);
+background: linear-gradient(223deg, rgba(240,105,105,1) 0%, rgba(251,29,253,0.6082808123249299) 50%, rgba(46,237,245,0.7287289915966386) 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+#logreg-forms{
+    width:412px;
+    margin:10vh auto;
+    background-color:#f3f3f3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#logreg-forms form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input#inputEmail {
+    margin-bottom: 10px;
+}
+input#inputPassword {
+  margin-bottom: 10px;
+}
+#logreg-forms .social-btn{
+    font-weight: 100;
+    color:white;
+    width:190px;
+    font-size: 0.9rem;
+}
+
+#logreg-forms a{
+    display: block;
+    padding-top:10px;
+    color:lightseagreen;
+}
+
+
+
+
+
+#logreg-forms .facebook-btn{  background-color:#3C589C; }
+
+#logreg-forms .google-btn{ background-color: #DF4B3B; }
+
+
+
+#logreg-forms .form-signup .social-btn{ width:210px; }
+
+
+.form-signup .social-login{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+
+
+    #logreg-forms{
+        width:300px;
+    }
+    div#logreg-forms {
+    margin-top: 2px;
+    height: 100%;
+    border: 1px solid #eee;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+}
+    #logreg-forms  .social-login{
+        width:100%;
+        margin:0 auto;
+        margin-bottom: 10px;
+    }
+    #logreg-forms  .social-btn{
+        font-size: 1.3rem;
+        font-weight: 100;
+        color:white;
+        width:200px;
+        height: 56px;
+        
+    }
+    #logreg-forms .social-btn {
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+    div#logreg-forms {
+    margin: 0px !important;
+    height: 100% !important;
+}
+    
+
+</style>
+<body class="bg">
+  <div>
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <div class="logo">
+            <a class="brand-logo" href="#"><span><span class="fa fa-viadeo" aria-hidden="true"> Fruitant</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="nav navbar-nav mr-auto ">
+            <a class="nav-item nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link " href="gallery.html">Gallery</a>
+            <a class="nav-item nav-link active" href="contact.html">Contact</a>
+           
+          </div>
+          <div class="nav navbar-nav ml-auto">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal">SIGN UP</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+<br>
+<br>
+<br>
+    <div class="container contact">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="contact-info">
+                <img src="./images/icon-ios7-contact-512.png" alt="image"/>
+                <h2>Contact Us</h2>
+                <h4>We would love to hear from you !</h4>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="contact-form">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="fname">First Name:</label>
+                  <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                  <div class="col-sm-10">          
+                  <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="comment">Comment:</label>
+                  <div class="col-sm-10">
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div id="logreg-forms">
+            <form class="form-signin">
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+                <div class="social-login">
+                    <button class="btn facebook-btn social-btn btn-block" type="button"><span><i class="fa fa-facebook-f"></i> Sign in with Facebook</span> </button>
+                    <button class="btn google-btn social-btn btn-block" type="button"><span><i class="fa fa-google-plus"></i> Sign in with Google+</span> </button>
+                </div>
+                <p style="text-align:center"> OR  </p>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                
+                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+                <a href="#" id="forgot_pswd">Forgot password?</a>
+                <hr>
+                <!-- <p>Don't have an account!</p>  -->
+                <button class="btn btn-primary btn-block" type="button"data-toggle="modal" data-target="#modal" id="btn-signup">Sign up New Account</button>
+              </form>
+                
+              
+                <br>
+                
+        </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">SIGN UP</h5><span style="float: left;"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname"  placeholder="Enter First Name">
+    
+                      </div>
+                    <div class="form-group">
+                      <label for="surname">Last Name</label>
+                      <input type="text" class="form-control" id="surname"  placeholder="Enter Last Name">
+    
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email address</label>
+                        <input type="email" class="form-control" id="Email"  placeholder="Enter email">
+    
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">mobile</label>
+                        <input type="number" class="form-control" id="phone"  placeholder="Enter Mobile Number">
+    
+                      </div>
+                      <div>date of birth</div>
+                      <div class="row">
+                          <div class="col-3">
+                            <div class="form-group">
+                               
+                                <select class="form-control" id="dob" placeholder="date">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-group">
+                              
+                                <select class="form-control" id="dob"placeholder="month" >
+                                  <option>January</option>
+                                  <option>february</option>
+                                  <option>march</option>
+                                  <option>april</option>
+                                  <option>may</option>
+                                </select>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-group">
+                              
+                                <select class="form-control" id="dob" placeholder="year">
+                                  <option>1995</option>
+                                  <option>1996</option>
+                                  <option>1997</option>
+                                  <option>1998</option>
+                                  <option>1999</option>
+                                </select>
+                              </div>
+                          </div>
+                      </div>
+                    <div class="form-group">
+                      <label for="Password1">Password</label>
+                      <input type="password" class="form-control" id="Password1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="Password2"> Repeat Password</label>
+                        <input type="password" class="form-control" id="Password2" placeholder=" Repeat Password">
+                      </div>
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-primary btn-block">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    <div class="pad"></div>
+    <div class="pad"></div>
+
+</body>
+</html>
