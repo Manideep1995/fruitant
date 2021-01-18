@@ -4,7 +4,7 @@ span.fa.fa-viadeo {
     font-weight: 600;
     line-height: 10px;
 }
-nav.navbar.navbar-expand-lg.bg-light {
+nav.navbar.navbar-expand-lg.bg-dark {
     top: 0;
     z-index: 100;
     position: absolute;
@@ -27,7 +27,7 @@ a.brand-logo:hover{
 a.brand-logo.span.fru{
      color: greenyellow !important;
 }
-nav.navbar.navbar-expand-lg.bg-light {
+nav.navbar.navbar-expand-lg.bg-dark.navbar-dark {
     background-color: blue !important;
 }
 a.nav-item.nav-link.active {
@@ -44,16 +44,14 @@ a.nav-item.nav-link {
 
 
 .carousel-item {
-    height:100vh;
-    min-height: 300px;
+   /* height:100vh; */
+    min-height: 100%;
     background: no-repeat center center scroll;
     -webkit-backgroud-size:cover;
     background-size: cover;
+    max-width: 100%;;
 }
-.carousel-caption.d-none.d-md-block {
-    /* top: 270px; */
-    bottom: 270px;
-}
+
 
 
 .carousel-indicators .active {
@@ -69,9 +67,7 @@ a.nav-item.nav-link {
         bottom: -50px;
     }
 
-.carousel-control-prev {
-    left: 0;
-}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
     width: 20px;
@@ -82,16 +78,16 @@ a.nav-item.nav-link {
 }
 
  h6.tag {
-    font-size:46px;
-    line-height: 20px;
+    font-size:25px;
+  
     text-transform: uppercase;
     color: chartreuse;
     letter-spacing: 2px;
     margin-top: 25px;
 }
  h3.title {
-    font-size: 70px;
-    line-height: 75px;
+    font-size: 25px;
+   
     color: #fff;
     margin: 25px 0;
     display: inline-block;
@@ -99,12 +95,16 @@ a.nav-item.nav-link {
 
  p.para {
    
-    font-size: 30px;
-    line-height: 25px;
+    font-size: 16px;
+
 color: white;
 line-height: 2;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+
+}
+img.img-responsive {
+    width: 100%;
+    height: 70vh !important;
 }
  a.read {
     display: inline-block;
@@ -112,7 +112,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     background: green;
     text-align: center;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 4px;
     margin-right: 5px;
 }
@@ -141,6 +141,7 @@ span.fa.fa-yelp {
 
 
 h4.ag {
+    width: inherit;
     font-size: 18px;
     line-height: 22px;
     color: cyan;
@@ -195,10 +196,7 @@ span.fa.fa-shopping-basket{
     border-radius: 50%;
     margin-bottom: 20px;      
 }
-.col-2.grid {
-   
-    margin-right: 20px;
-}
+
 h3.fruit {
     margin-left: 42px;
 }
