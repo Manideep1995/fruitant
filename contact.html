@@ -14,8 +14,128 @@
  <title>Fruitant</title>
 </head>
 <style>
+  /* footer */
+        img.cover {
+            width: 100%;
+            height: 100%;
+        }
+        img.aboutImg {
+            height: 100%;
+            width: 100%;
+          }
+          button.btn.achiveBtn {
+            background-color: greenyellow;
+              color: #fff;
+              border-radius: 0px;
+             
+              letter-spacing: 1px;
+              font-size: 15px;
+          }
+        .row.gap{
+            padding-top: 30px;
+        }
+        a.tag {
+            font-size: 15px;
+            line-height: 25px;
+            border: 1px solid #888;
+            padding: 5px 10px;
+            display: inline-block;
+            color: #888;
+            border-radius: 4px;
+            margin-bottom: 4px;
+            text-decoration: none !important;
+        }
+        p.copy {
+            color: #888;
+            font-size: 16px;
+            line-height: 25px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #252525;
+        }
+        .text-center {
+            text-align: center;
+        }
+         .copyright p a {
+            color: #aaa;
+        }
+        
+  /* footer */
+  .background {
+    background-color: black;
+}
+h6.footer-title-28 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-weight: 500;
+  
+}
+p.para3 {
+    color: #888;
+    font-size: 16px;
+    line-height: 25px;
+    transition: .3s;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.jum.mmm {
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    background-color: black;
+    padding: 50px;
+}
+li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #888;
+    list-style: none;
+    margin-bottom: 15px;
 
+}
+a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #888;
+}
+a.mail {
+    color: #888;
+}
+p.mail {
+    color: #888;
+}
 
+a {
+    color: #888;
+    text-decoration: none !important;
+   
+    
+}
+a.tag:hover{
+    color: white !important;
+}
+
+a.mail:hover{
+    color: white !important;
+}
+p.mail:hover{
+    color: white !important;
+}
+a.read:hover{
+    color: white !important;
+}
+img.qimg-responsive {
+    width: 10%;
+    background: black;
+    border-radius: 50%;
+}
+    /* footer */
 	.contact{
 		padding: 4%;
 		height: 400px;
@@ -76,7 +196,7 @@ a.brand-logo:hover{
 a.brand-logo.span.fru{
      color: greenyellow !important;
 }
-nav.navbar.navbar-expand-lg.bg-light {
+nav.navbar.navbar-expand-lg.bg-dark.navbar-dark {
     background-color: blue !important;
 }
 a.nav-item.nav-link.active {
@@ -94,7 +214,8 @@ a.nav-item.nav-link {
 		color: #fff;
 		font-weight: 600;
 		width: 25%;
-	}
+  }
+  
 	.contact-form button:focus{
 		box-shadow:none;
   }
@@ -211,15 +332,13 @@ input#inputPassword {
 
 </style>
 <body class="bg">
-  <div>
-    <nav class="navbar navbar-expand-lg  bg-light">
-        <div class="logo">
-            <a class="brand-logo" href="#"><span><span class="fa fa-viadeo" aria-hidden="true"> Fruitant</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-		 
-        </div>
-        <div class="collapse navbar-collapse" id="id="navbarSupportedContent"">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+ 
+    <a class="navbar-brand"  href="#"><span class="fa fa-viadeo" aria-hidden="true"></span>Fruitant</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <div class="nav navbar-nav mr-auto ">
             <a class="nav-item nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="about.html">About</a>
@@ -282,6 +401,7 @@ input#inputPassword {
             </div>
           </div>
         </div>
+        <br>
         <div class="col-md-5">
           <div id="logreg-forms">
             <form class="form-signin">
@@ -392,6 +512,74 @@ input#inputPassword {
       </div> 
     <div class="pad"></div>
     <div class="pad"></div>
+    <footer>
 
+      <div class="background jum mmm">
+        <div class="  row gap">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-3">
+      
+              <h6 class="footer-title-28">Contact Info</h6>
+              <ul>
+                  <li>
+                      <p class="para3"><span class="fa fa-map-marker"></span> Grosvenor Gardens House, 35-37 Grosvenor
+                          Gardens,
+                          Westminster, London SW1W 0DH, United Kingdom </p>
+                  </li>
+                  <li><span class="fa fa-phone"></span> Phone: <a href="tel:+7-800-999-800" class="mail">+(21) 255 999
+                          8888</a>
+                  </li>
+                  <li><span class="fa fa-mobile"></span> Mobile: <a href="tel:+7-800-999-800" class="mail"> +(21) 255 999
+                          8899</a></li>
+                  <li><span class="fa fa-envelope-open-o"></span> Mail: <a href="mailto:vegetables@mail.com" class="mail"> vegetables@mail.com</a></li>
+              </ul>
+         
+          </div>
+          <div class="col-sm-3">
+            <h6 class="footer-title-28">Latest News</h6>
+            <ul class="posts">
+              <a href=""><img src="./images/download (4).jpg" class=" qimg-responsive" alt="">
+                  <p class="mail">Vegetables and organic <br> fruits<br><span>Oct 28th, 2019</span></p>
+              </a>
+              <a href=""><img src="./images/download (3).jpg" class="qimg-responsive" alt="">
+                  <p class="mail">Vegetables and organic fruits<br><span>Oct 31st, 2019</span></p>
+              </a>
+              <a href=""><img src="./images/guava-11524347558ep4yauzgjm.png" class=" qimg-responsive" alt="">
+                  <p class="mail">Vegetables and organic fruits<br><span>Nov 2nd, 2019</span></p>
+              </a>
+          </ul>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="footer-title-28">Useful Links</h6>
+            <ul>
+              <li><a href="#" class="mail">About us</a></li>
+              <li><a href="#" class="mail">Our farmers</a></li>
+              <li><a href="#" class="mail">Blog posts</a></li>
+              <li><a href="#" class="mail">Our services</a></li>
+              <li><a href="#" class="mail">Contact us</a></li>
+              <li><a href="#" class="mail">Food gallery</a></li>
+          </ul>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="footer-title-28">Quotation</h6>
+            <p class="para3">Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Viva mus id.</p>
+            <h6 class="footer-title-28 margin-top">Tags</h6>
+            <a href="#" class="tag">Vegetables</a>
+            <a href="#" class="tag">Fruits</a>
+            <a href="#" class="tag">Organic</a>
+            <a href="#" class="tag">Farming</a>
+          </div>
+          <div class="col-sm-1"></div>
+       
+        </div>
+    
+          <div class="copyright text-center">
+           
+                <p class="copy">© 2021 Fruitant. All rights reserved | Designed by <a href="#" target="_blank">Manideep</a></p>
+       
+      </div>
+      <div class="pad"></div>
+      </div>
+    </footer>
 </body>
 </html>
